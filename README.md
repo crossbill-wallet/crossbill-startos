@@ -126,11 +126,12 @@ The node's `cormorant` wallet is Bitcoin's data, not Crossbill's, and is not in 
 ## Limitations and Differences
 
 1. Watch-only: there is no screen for seed words, and the server refuses to store them. Wallets come from a Krux's key, and every send is signed on the Krux.
-2. No camera scanner in the browser: a Krux's QR codes are pasted as text, or moved by microSD file.
+2. QR codes are read in the page, with the camera of the device it's open on (jsQR, not the iPhone's VisionKit). The browser gives a page the camera only on a secure address: the interface's `https://` address, or an onion in Tor Browser. On plain `http://` the scanner says so and offers a picture of the code or its pasted text instead.
 3. No Face ID, app PIN or duress PIN. Two-factor asks for its code, but the page checks it and the server hands the page its key once signed in, so on this server the password is what keeps others out.
 4. No sign-out button in the page; Set Password signs out every session.
 5. Untested on a pruned node, where Bitcoin's RPC on 8332 is its block-fetching proxy rather than the node itself.
 6. Mainnet only: the package doesn't offer testnet4 or regtest, which the server supports.
+7. No notifications, by decision: the iPhone app's notifications come from iOS waking the app, and nothing here runs while no Crossbill page is open. The Notifications settings are hidden in this version. No widgets either.
 
 ---
 
