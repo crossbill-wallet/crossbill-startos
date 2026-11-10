@@ -14,7 +14,7 @@
 
 ## Getting set up
 
-1. **Install Bitcoin first,** following the BLAKE2b chain. If Bitcoin asks to turn its wallet on for Crossbill, run that.
+1. **Install Bitcoin first,** following the BLAKE2b chain: Bitcoin Knots 29.4.1 or later, not the pre-RDTS Knots flavor or Bitcoin Core. If Bitcoin asks to turn its wallet on for Crossbill, run that.
 2. **Run Set Password** on Crossbill. Copy the password it shows into your password manager: it is shown only once.
 3. **Start Crossbill,** then open the **Web UI** interface at its `https://` address and sign in. The camera works only on a secure address: that one, or an onion address in Tor Browser.
 4. **Add your Krux wallet.** On the Krux, show its key's QR code, then in Crossbill choose **Scan the Krux's key** and hold the code up to the camera. Or save the key to microSD and choose **Open the key file from microSD**. Check the balance and the first receive address match what you expect.
